@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- defines page language. Helps with accessibility -->
+    <!-- Defines page language. Helps with accessibility. -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,31 +8,38 @@
     <link rel="stylesheet" href="style.css">
     <title>HTML & CSS Lesson</title>
 </head>
-<body> 
-    <nav style="background-color: slategray;">
+<body>
+    <!-- Inline CSS styling -->
+    <nav style="background-color: red;">
         <ul class="menu">
             <li class="menu-options"><a href="#html" class="nav-link">HTML</a></li>
             <li class="menu-options"><a href="#css" class="nav-link">CSS</a></li>
-            <li class="menu-options"><a href="#form-container" class="nav-link">Contact</a></li>
+            <li id="contact" class="menu-options"><a href="#form-container" class="nav-link">Contact</a></li>
         </ul>
     </nav>
-        <div>
-            <h3>Git lesson notes   </h3>
-            <p>blah blah</p>
-        </div>
-    <div id="form-container"></div>
+
+    <div style="margin-top: 4em;">
+        <h3>Git Lesson Notes</h3>
+        <p>Git is a version control system that allows us to create timelines and snapshots of our codebase at any point in time</p>
+    </div>
+
+    <div id="form-container">
         <form action="">
-            <label for="email">Email</label>
-            <input type="email" 
-            placeholder="Type here"
-            autocapitalize="off" 
-            autocomplete="off" 
+            <label class="form-display" for="email">Email</label>
+            <input id="email-input" class="form-display" type="email" placeholder="Type here"
+            autocapitalize="off"
+            autocomplete="off"
             autocorrect="off">
-            <label for="message">Message</label>
-            <textarea name="message" 
-            id="message" cols="40" rows="10"></textarea>
-            <button id="submit" 
-            class="submit">Submit</button>
+            <label  class="form-display" for="message">Message</label>
+            <textarea class="form-display" name="message" cols="40" rows="10"></textarea>
+            <button id="submit" class="submit">Submit</button>
         </form>
+    </div>
+
+    <div class="test">
+        <a style="border: 2px solid blue;" href="">Hello HTML</a>
+    </div>
+
+
 </body>
 </html>
